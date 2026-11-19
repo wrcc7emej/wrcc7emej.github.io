@@ -1,0 +1,1625 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>孟若羽 金寶娜 - 双人影像品牌 | 记录生活里的真实与温暖</title>
+<meta name="description" content="孟若羽 金寶娜官方网站，记录两位创作者关于生活、城市与手作的影像作品，持续更新原创内容，打造值得信赖的真实影像内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8a5b'/%3E%3Cstop offset='1' stop-color='%23e8436b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M24 20l20 12-20 12z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --mrj-bg:#fdf9f4;
+    --mrj-ink:#2b2320;
+    --mrj-sub:#7a6a60;
+    --mrj-brand:#e8436b;
+    --mrj-brand-2:#ff8a5b;
+    --mrj-amber:#f2a53c;
+    --mrj-line:#efdfd2;
+    --mrj-card:#ffffff;
+    --mrj-dark:#33261f;
+    --mrj-radius:18px;
+    --mrj-shadow:0 10px 30px rgba(80,45,20,.10);
+    --mrj-head-h:64px;
+    --mrj-ann-h:40px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    background:var(--mrj-bg);color:var(--mrj-ink);line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  .mrj-wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .mrj-anchor{scroll-margin-top:calc(var(--mrj-head-h) + var(--mrj-ann-h) + 16px)}
+  h1,h2,h3,h4{margin:0;line-height:1.3;letter-spacing:.4px}
+  h2{font-size:clamp(23px,2.6vw,32px)}
+  h3{font-size:clamp(17px,1.6vw,20px)}
+  p{margin:0 0 14px}
+  .mrj-eyebrow{font-size:13px;letter-spacing:3px;color:var(--mrj-brand);font-weight:700;text-transform:uppercase;margin-bottom:10px}
+
+  /* ===== 吸顶：公告 + 页头 ===== */
+  .mrj-sticky{position:sticky;top:0;z-index:900}
+  .mrj-announce{
+    height:var(--mrj-ann-h);display:flex;align-items:center;background:linear-gradient(90deg,#33261f,#5a3226 55%,#8c3a2c);
+    color:#ffe9d8;font-size:13.5px;overflow:hidden;
+  }
+  .mrj-announce .mrj-wrap{display:flex;align-items:center;gap:12px;width:100%}
+  .mrj-announce-tag{flex:0 0 auto;background:var(--mrj-brand);color:#fff;font-weight:700;font-size:11.5px;letter-spacing:1.5px;padding:3px 9px;border-radius:999px}
+  .mrj-announce-track{flex:1 1 auto;overflow:hidden;white-space:nowrap;position:relative;height:22px}
+  .mrj-announce-inner{position:absolute;white-space:nowrap;animation:mrjMarquee 26s linear infinite}
+  .mrj-announce-inner span{margin-right:48px}
+  .mrj-announce-inner b{color:#ffc79a}
+  @keyframes mrjMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+  .mrj-header{background:rgba(253,249,244,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--mrj-line);height:var(--mrj-head-h)}
+  .mrj-header .mrj-wrap{display:flex;align-items:center;height:100%;gap:20px}
+  .mrj-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:1px;flex:0 0 auto}
+  .mrj-logo-mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--mrj-brand-2),var(--mrj-brand));display:grid;place-items:center;box-shadow:0 6px 14px rgba(232,67,107,.35)}
+  .mrj-logo-mark svg{width:16px;height:16px}
+  .mrj-logo small{display:block;font-size:10px;letter-spacing:3px;color:var(--mrj-sub);font-weight:600}
+  .mrj-nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+  .mrj-nav a{padding:8px 13px;border-radius:10px;font-size:14.5px;color:#4b3c34;font-weight:600;transition:.2s}
+  .mrj-nav a:hover{background:#f6e8dc;color:var(--mrj-brand)}
+  .mrj-search{display:flex;align-items:center;background:#f4ece3;border-radius:999px;padding:6px 6px 6px 14px;gap:6px;flex:0 0 230px}
+  .mrj-search input{border:none;background:none;outline:none;font-size:13.5px;width:100%;color:var(--mrj-ink)}
+  .mrj-search input::placeholder{color:#a9968a}
+  .mrj-search button{background:var(--mrj-brand);color:#fff;border-radius:999px;font-size:12.5px;padding:6px 13px;font-weight:700;white-space:nowrap;transition:.2s}
+  .mrj-search button:hover{background:#c9304f}
+  .mrj-burger{display:none;margin-left:auto;width:42px;height:42px;border-radius:12px;background:#f4ece3;place-items:center}
+  .mrj-burger span{display:block;width:19px;height:2px;background:var(--mrj-ink);margin:3px auto;border-radius:2px;transition:.25s}
+  .mrj-burger.mrj-open span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+  .mrj-burger.mrj-open span:nth-child(2){opacity:0}
+  .mrj-burger.mrj-open span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+  .mrj-mobile-nav{display:none;background:#fff8f1;border-bottom:1px solid var(--mrj-line);padding:10px 22px 18px}
+  .mrj-mobile-nav.mrj-show{display:block}
+  .mrj-mobile-nav a{display:block;padding:11px 6px;border-bottom:1px dashed var(--mrj-line);font-weight:600;font-size:15px}
+  .mrj-search-feedback{font-size:13px;color:var(--mrj-brand);padding:0 6px;min-height:0}
+
+  /* ===== 首屏 ===== */
+  .mrj-hero{padding:56px 0 30px;position:relative;overflow:hidden}
+  .mrj-hero::before{content:"";position:absolute;right:-140px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#ffd9b3,transparent 68%);opacity:.65;z-index:0}
+  .mrj-hero::after{content:"";position:absolute;left:-120px;bottom:-160px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 60% 40%,#ffd0dd,transparent 66%);opacity:.6;z-index:0}
+  .mrj-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .mrj-hero-title{font-size:clamp(34px,5vw,60px);font-weight:900;line-height:1.1;letter-spacing:1px}
+  .mrj-hero-title em{font-style:normal;background:linear-gradient(120deg,var(--mrj-brand),var(--mrj-brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .mrj-hero-sub{margin:16px 0 20px;color:var(--mrj-sub);font-size:16.5px;max-width:520px}
+  .mrj-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .mrj-badge{font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px;background:#fff;border:1px solid var(--mrj-line);color:#6b5347}
+  .mrj-badge.mrj-badge-hot{background:linear-gradient(120deg,#fff1e3,#ffe2ea);border-color:#ffd3c2;color:var(--mrj-brand)}
+  .mrj-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+  .mrj-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:15px;transition:.22s;border:1.5px solid transparent}
+  .mrj-btn-primary{background:linear-gradient(120deg,var(--mrj-brand-2),var(--mrj-brand));color:#fff;box-shadow:0 10px 24px rgba(232,67,107,.32)}
+  .mrj-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(232,67,107,.4)}
+  .mrj-btn-ghost{background:#fff;border-color:var(--mrj-line);color:#4b3c34}
+  .mrj-btn-ghost:hover{border-color:var(--mrj-brand);color:var(--mrj-brand)}
+  .mrj-stats{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .mrj-stat{background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:16px;padding:14px 20px;min-width:130px;box-shadow:var(--mrj-shadow)}
+  .mrj-stat b{display:block;font-size:26px;font-weight:900;background:linear-gradient(120deg,var(--mrj-brand),var(--mrj-brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .mrj-stat span{font-size:12.5px;color:var(--mrj-sub);letter-spacing:1px}
+
+  .mrj-cover{position:relative;border-radius:26px;overflow:hidden;box-shadow:0 26px 60px rgba(90,40,20,.22);aspect-ratio:16/10;background:#222}
+  .mrj-cover svg{width:100%;height:100%;object-fit:cover}
+  .mrj-cover-caption{position:absolute;left:0;right:0;bottom:0;padding:22px 22px 18px;background:linear-gradient(transparent,rgba(30,16,8,.82));color:#fff}
+  .mrj-cover-caption h3{color:#fff;font-size:19px}
+  .mrj-cover-caption p{margin:4px 0 0;font-size:13px;color:#ffd9c4}
+  .mrj-play-pill{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.9);color:#33261f;font-size:12px;font-weight:800;padding:5px 12px;border-radius:999px;display:flex;align-items:center;gap:6px}
+  .mrj-play-pill i{width:0;height:0;border-left:8px solid var(--mrj-brand);border-top:5px solid transparent;border-bottom:5px solid transparent;display:inline-block}
+
+  /* ===== 通用区块 ===== */
+  .mrj-section{padding:56px 0}
+  .mrj-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+  .mrj-section-head p{margin:8px 0 0;color:var(--mrj-sub);font-size:14.5px;max-width:600px}
+  .mrj-more{font-size:14px;font-weight:700;color:var(--mrj-brand);display:inline-flex;align-items:center;gap:6px}
+  .mrj-more:hover{text-decoration:underline}
+
+  /* 焦点内容 */
+  .mrj-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+  .mrj-focus-main{position:relative;border-radius:var(--mrj-radius);overflow:hidden;box-shadow:var(--mrj-shadow);aspect-ratio:16/9;background:#222}
+  .mrj-focus-main .mrj-cover-caption h3{font-size:23px}
+  .mrj-focus-side{display:grid;gap:14px}
+  .mrj-mini{display:grid;grid-template-columns:150px 1fr;gap:14px;background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:14px;overflow:hidden;transition:.22s;align-items:stretch}
+  .mrj-mini:hover{transform:translateY(-3px);box-shadow:var(--mrj-shadow);border-color:#ffd3c2}
+  .mrj-mini-thumb{position:relative;background:#222;overflow:hidden}
+  .mrj-mini-thumb svg{width:100%;height:100%;object-fit:cover}
+  .mrj-mini-body{padding:12px 14px 12px 0;display:flex;flex-direction:column;justify-content:center}
+  .mrj-mini-body h4{font-size:15px;font-weight:800;line-height:1.4}
+  .mrj-mini-body p{font-size:12.5px;color:var(--mrj-sub);margin:5px 0 0}
+  .mrj-mini-meta{font-size:12px;color:#9a8578;margin-top:7px}
+
+  /* 视频流两列大卡 */
+  .mrj-video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .mrj-video-card{background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:var(--mrj-radius);overflow:hidden;transition:.24s;display:flex;flex-direction:column}
+  .mrj-video-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(90,45,20,.14);border-color:#ffd3c2}
+  .mrj-video-thumb{position:relative;aspect-ratio:16/9;background:#222;overflow:hidden}
+  .mrj-video-thumb svg{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .mrj-video-card:hover .mrj-video-thumb svg{transform:scale(1.04)}
+  .mrj-video-tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.92);color:#33261f;font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:1px}
+  .mrj-video-duration{position:absolute;bottom:12px;right:12px;background:rgba(20,10,4,.72);color:#fff;font-size:11.5px;padding:3px 9px;border-radius:6px}
+  .mrj-video-tri{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.25s}
+  .mrj-video-card:hover .mrj-video-tri{opacity:1}
+  .mrj-video-tri div{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+  .mrj-video-tri i{width:0;height:0;border-left:16px solid var(--mrj-brand);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+  .mrj-video-body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+  .mrj-video-body h3{font-size:17.5px;font-weight:800;line-height:1.45}
+  .mrj-video-body p{font-size:13.5px;color:var(--mrj-sub);margin:8px 0 10px}
+  .mrj-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .mrj-chip{font-size:11.5px;padding:3px 9px;border-radius:999px;background:#fdf1e7;color:#a46a3e;font-weight:600}
+  .mrj-author-row{display:flex;align-items:center;gap:9px;margin-top:auto}
+  .mrj-avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:800;flex:0 0 auto}
+  .mrj-author-row span{font-size:13px;font-weight:700;color:#4b3c34}
+  .mrj-author-row small{font-size:11.5px;color:#a9968a;margin-left:auto}
+  .mrj-video-actions{display:flex;gap:8px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--mrj-line)}
+  .mrj-act{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#6b5347;background:#faf3ec;padding:7px 13px;border-radius:999px;transition:.2s}
+  .mrj-act:hover{background:#ffe6dc;color:var(--mrj-brand)}
+  .mrj-act.mrj-active{background:#ffe1d6;color:var(--mrj-brand)}
+  .mrj-act.mrj-faved{background:#ffe3ec;color:var(--mrj-brand)}
+  .mrj-act svg{width:15px;height:15px}
+
+  /* 专题 */
+  .mrj-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .mrj-topic{position:relative;border-radius:var(--mrj-radius);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--mrj-shadow);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;transition:.24s}
+  .mrj-topic:hover{transform:translateY(-5px)}
+  .mrj-topic svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .mrj-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(30,16,8,.86));z-index:1}
+  .mrj-topic-body{position:relative;z-index:2;padding:20px}
+  .mrj-topic-status{display:inline-block;font-size:11.5px;font-weight:800;padding:4px 11px;border-radius:999px;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);margin-bottom:10px;letter-spacing:1px}
+  .mrj-topic-body h3{color:#fff;font-size:19px}
+  .mrj-topic-body p{color:#f2d9c9;font-size:13px;margin:6px 0 0}
+
+  /* 创作者 */
+  .mrj-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .mrj-creator{background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:var(--mrj-radius);padding:24px 20px;text-align:center;transition:.24s;position:relative;overflow:hidden}
+  .mrj-creator::before{content:"";position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,#ffe6d6,transparent 70%);opacity:.8}
+  .mrj-creator:hover{transform:translateY(-5px);box-shadow:var(--mrj-shadow);border-color:#ffd3c2}
+  .mrj-creator .mrj-avatar{width:64px;height:64px;font-size:24px;margin:0 auto 12px;position:relative;z-index:1}
+  .mrj-creator h3{font-size:16.5px;font-weight:800;position:relative;z-index:1}
+  .mrj-creator em{display:block;font-style:normal;font-size:12.5px;color:var(--mrj-brand);font-weight:700;margin-top:3px}
+  .mrj-creator p{font-size:13px;color:var(--mrj-sub);margin:11px 0 13px;min-height:57px}
+  .mrj-creator-stats{display:flex;justify-content:center;gap:16px;font-size:12px;color:#9a8578;position:relative;z-index:1}
+  .mrj-creator-stats b{display:block;font-size:15px;color:var(--mrj-ink);font-weight:900}
+  .mrj-creator-btn{margin-top:15px;width:100%;padding:9px 0;border-radius:10px;background:#faf0e8;font-size:13px;font-weight:700;color:#6b5347;transition:.2s;position:relative;z-index:1}
+  .mrj-creator-btn:hover{background:var(--mrj-brand);color:#fff}
+
+  /* 作品墙 */
+  .mrj-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
+  .mrj-wall-item{position:relative;border-radius:14px;overflow:hidden;background:#222;transition:.24s}
+  .mrj-wall-item:hover{transform:scale(1.015);box-shadow:var(--mrj-shadow)}
+  .mrj-wall-item svg{width:100%;height:100%;object-fit:cover}
+  .mrj-wall-item span{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;font-size:12.5px;font-weight:700;color:#fff;background:linear-gradient(transparent,rgba(20,10,4,.85));z-index:1}
+  .mrj-w2{grid-column:span 2}
+  .mrj-w3{grid-column:span 3}
+  .mrj-h2{grid-row:span 2}
+
+  /* 用户评价 */
+  .mrj-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .mrj-review{background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:16px;padding:20px;display:flex;flex-direction:column;transition:.22s}
+  .mrj-review:hover{box-shadow:var(--mrj-shadow);border-color:#ffd3c2}
+  .mrj-review-top{display:flex;align-items:center;gap:10px;margin-bottom:11px}
+  .mrj-review-top .mrj-avatar{width:38px;height:38px;font-size:15px}
+  .mrj-review-top b{font-size:14px;display:block}
+  .mrj-review-top small{font-size:11.5px;color:#a9968a}
+  .mrj-review p{font-size:13.5px;color:#5a4a40;margin:0;flex:1}
+  .mrj-stars{color:var(--mrj-amber);font-size:13px;letter-spacing:2px;margin-top:12px}
+
+  /* 品牌故事 */
+  .mrj-story{background:linear-gradient(140deg,#33261f,#5a3226 60%,#8c3a2c);color:#f6e4d6;border-radius:28px;padding:0;overflow:hidden;position:relative}
+  .mrj-story-grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+  .mrj-story-text{padding:48px 44px}
+  .mrj-story-text .mrj-eyebrow{color:#ffb989}
+  .mrj-story-text h2{color:#fff;margin-bottom:16px}
+  .mrj-story-text p{color:#e8cfbf;font-size:14.5px}
+  .mrj-story-visual{position:relative;min-height:360px;background:#1a1210}
+  .mrj-story-visual svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .mrj-story-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .mrj-story-tags span{font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid rgba(255,180,140,.4);color:#ffcba9}
+
+  /* 动态 */
+  .mrj-news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .mrj-news{display:flex;gap:14px;background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:14px;padding:18px;transition:.22s}
+  .mrj-news:hover{box-shadow:var(--mrj-shadow);border-color:#ffd3c2}
+  .mrj-news-date{flex:0 0 62px;text-align:center;background:linear-gradient(150deg,#fff1e3,#ffe2ea);border-radius:10px;padding:9px 4px;height:fit-content}
+  .mrj-news-date b{display:block;font-size:20px;font-weight:900;color:var(--mrj-brand);line-height:1.1}
+  .mrj-news-date span{font-size:11px;color:#a46a3e;font-weight:700}
+  .mrj-news h3{font-size:15px;margin-bottom:5px}
+  .mrj-news p{font-size:13px;color:var(--mrj-sub);margin:0}
+
+  /* FAQ */
+  .mrj-faq{max-width:860px;margin:0 auto}
+  .mrj-faq details{background:var(--mrj-card);border:1px solid var(--mrj-line);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:.2s}
+  .mrj-faq details[open]{border-color:#ffd3c2;box-shadow:var(--mrj-shadow)}
+  .mrj-faq summary{list-style:none;cursor:pointer;padding:17px 20px;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .mrj-faq summary::-webkit-details-marker{display:none}
+  .mrj-faq summary::after{content:"+";font-size:20px;color:var(--mrj-brand);font-weight:700;transition:.2s;line-height:1}
+  .mrj-faq details[open] summary::after{transform:rotate(45deg)}
+  .mrj-faq .mrj-faq-body{padding:0 20px 18px;font-size:14px;color:var(--mrj-sub)}
+
+  /* 联系/投稿 */
+  .mrj-contact{background:linear-gradient(120deg,#fff1e3,#ffe6ee);border-radius:28px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;border:1px solid #ffd9c8}
+  .mrj-contact h2{margin-bottom:10px}
+  .mrj-contact p{color:#6b5347;font-size:14.5px}
+  .mrj-contact-list{display:grid;gap:10px;margin-top:18px}
+  .mrj-contact-list div{font-size:14px;color:#4b3c34;display:flex;gap:8px}
+  .mrj-contact-list b{color:var(--mrj-brand);min-width:66px;display:inline-block}
+  .mrj-contact-card{background:#fff;border-radius:20px;padding:24px;box-shadow:var(--mrj-shadow)}
+  .mrj-contact-card h3{margin-bottom:6px}
+  .mrj-contact-card p{font-size:13px;margin-bottom:16px}
+  .mrj-contact-card .mrj-btn{width:100%;justify-content:center;margin-bottom:10px}
+  .mrj-share{display:flex;gap:8px;margin-top:6px}
+  .mrj-share button{flex:1;font-size:12.5px;font-weight:700;padding:9px 0;border-radius:9px;background:#faf0e8;color:#6b5347;transition:.2s}
+  .mrj-share button:hover{background:var(--mrj-brand);color:#fff}
+
+  /* 页脚 */
+  .mrj-footer{background:#2a1f1a;color:#c4ae9f;padding:52px 0 30px;margin-top:20px}
+  .mrj-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+  .mrj-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:1px}
+  .mrj-footer p{font-size:13px;color:#a78f80;line-height:1.9}
+  .mrj-footer a{display:block;font-size:13px;color:#a78f80;padding:4px 0;transition:.2s}
+  .mrj-footer a:hover{color:var(--mrj-brand-2)}
+  .mrj-footer .mrj-logo{color:#fff;margin-bottom:12px}
+  .mrj-footer-bottom{border-top:1px solid #3d2e26;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#8c7566}
+
+  /* 回到顶部 */
+  .mrj-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--mrj-brand-2),var(--mrj-brand));color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px rgba(232,67,107,.4);opacity:0;pointer-events:none;transform:translateY(14px);transition:.28s;z-index:800}
+  .mrj-top.mrj-show{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .mrj-top svg{width:20px;height:20px}
+
+  /* Toast & Modal */
+  .mrj-toast{position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);background:rgba(40,26,18,.94);color:#ffe9d8;padding:11px 22px;border-radius:999px;font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;transition:.3s;z-index:1200;white-space:nowrap}
+  .mrj-toast.mrj-show{opacity:1;transform:translate(-50%,0)}
+  .mrj-modal-mask{position:fixed;inset:0;background:rgba(30,18,10,.55);backdrop-filter:blur(4px);display:none;place-items:center;z-index:1100;padding:20px}
+  .mrj-modal-mask.mrj-show{display:grid}
+  .mrj-modal{background:#fff;border-radius:22px;max-width:520px;width:100%;padding:30px;position:relative;box-shadow:0 30px 70px rgba(0,0,0,.35);max-height:86vh;overflow:auto}
+  .mrj-modal h3{font-size:20px;margin-bottom:8px}
+  .mrj-modal p{font-size:14px;color:var(--mrj-sub);margin-bottom:16px}
+  .mrj-modal-close{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;background:#f4ece3;display:grid;place-items:center;font-size:18px;color:#6b5347}
+  .mrj-modal-close:hover{background:#ffe1d6;color:var(--mrj-brand)}
+  .mrj-field{margin-bottom:12px}
+  .mrj-field label{display:block;font-size:13px;font-weight:700;margin-bottom:5px;color:#4b3c34}
+  .mrj-field input,.mrj-field textarea{width:100%;border:1px solid var(--mrj-line);border-radius:10px;padding:10px 13px;font-size:14px;font-family:inherit;outline:none;background:#fdf9f4;color:var(--mrj-ink)}
+  .mrj-field input:focus,.mrj-field textarea:focus{border-color:var(--mrj-brand);background:#fff}
+  .mrj-field textarea{resize:vertical;min-height:86px}
+
+  @media(max-width:980px){
+    .mrj-nav,.mrj-search{display:none}
+    .mrj-burger{display:grid}
+    .mrj-hero-grid{grid-template-columns:1fr;gap:30px}
+    .mrj-focus-grid{grid-template-columns:1fr}
+    .mrj-topic-grid{grid-template-columns:1fr 1fr}
+    .mrj-creator-grid{grid-template-columns:1fr 1fr}
+    .mrj-story-grid{grid-template-columns:1fr}
+    .mrj-story-visual{min-height:260px}
+    .mrj-contact{grid-template-columns:1fr}
+    .mrj-footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:760px){
+    .mrj-video-grid{grid-template-columns:1fr}
+    .mrj-review-grid{grid-template-columns:1fr}
+    .mrj-news-grid{grid-template-columns:1fr}
+    .mrj-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}
+    .mrj-w3{grid-column:span 2}
+    .mrj-mini{grid-template-columns:120px 1fr}
+  }
+  @media(max-width:520px){
+    .mrj-topic-grid{grid-template-columns:1fr}
+    .mrj-creator-grid{grid-template-columns:1fr}
+    .mrj-footer-grid{grid-template-columns:1fr}
+    .mrj-story-text{padding:32px 24px}
+    .mrj-contact{padding:28px 22px}
+    .mrj-wall{grid-template-columns:1fr 1fr}
+    .mrj-w2,.mrj-w3{grid-column:span 2}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶区：公告条 + 页头 -->
+<div class="mrj-sticky">
+  <div class="mrj-announce">
+    <div class="mrj-wrap">
+      <span class="mrj-announce-tag">官方发布</span>
+      <div class="mrj-announce-track">
+        <div class="mrj-announce-inner" id="mrjAnnounce">
+          <span><b>11-19</b> 新专题《城市手记·冬》第一集上线，记录孟若羽在城市清晨里的行走</span>
+          <span><b>11-15</b> 金寶娜手作课堂发布新一期：旧毛衣改造计划，投稿通道已开启</span>
+          <span><b>11-10</b> 双人合作影像《一起做饭的第 200 天》突破 60 万次播放</span>
+          <span><b>11-05</b> 创作者招募计划启动，面向生活记录类作者开放报名</span>
+          <span><b>11-19</b> 新专题《城市手记·冬》第一集上线，记录孟若羽在城市清晨里的行走</span>
+          <span><b>11-15</b> 金寶娜手作课堂发布新一期：旧毛衣改造计划，投稿通道已开启</span>
+          <span><b>11-10</b> 双人合作影像《一起做饭的第 200 天》突破 60 万次播放</span>
+          <span><b>11-05</b> 创作者招募计划启动，面向生活记录类作者开放报名</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="mrj-header">
+    <div class="mrj-wrap">
+      <a class="mrj-logo" href="#mrjHome">
+        <span class="mrj-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 7l8 5-8 5V7z" fill="#fff"/></svg>
+        </span>
+        <span>孟若羽 金寶娜<small>MRJ · JINBAONA</small></span>
+      </a>
+      <nav class="mrj-nav">
+        <a href="#mrjHome">首页</a>
+        <a href="#mrjFocus">焦点</a>
+        <a href="#mrjTopics">专题</a>
+        <a href="#mrjCreators">创作者</a>
+        <a href="#mrjStory">品牌故事</a>
+        <a href="#mrjNews">动态</a>
+        <a href="#mrjFaq">帮助</a>
+        <a href="#mrjContact">联系</a>
+      </nav>
+      <form class="mrj-search" id="mrjSearchForm" role="search">
+        <input type="search" id="mrjSearchInput" placeholder="搜索视频、专题、创作者" aria-label="搜索视频、专题、创作者">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="mrj-burger" id="mrjBurger" aria-label="展开导航菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mrj-mobile-nav" id="mrjMobileNav">
+      <form class="mrj-search" id="mrjSearchFormMobile" role="search" style="display:flex;margin-bottom:8px">
+        <input type="search" id="mrjSearchInputMobile" placeholder="搜索视频、专题、创作者" aria-label="搜索视频、专题、创作者">
+        <button type="submit">搜索</button>
+      </form>
+      <a href="#mrjHome">首页</a>
+      <a href="#mrjFocus">焦点</a>
+      <a href="#mrjTopics">专题</a>
+      <a href="#mrjCreators">创作者</a>
+      <a href="#mrjStory">品牌故事</a>
+      <a href="#mrjNews">动态</a>
+      <a href="#mrjFaq">帮助</a>
+      <a href="#mrjContact">联系</a>
+      <div class="mrj-search-feedback" id="mrjMobileSearchFeedback"></div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="mrj-hero mrj-anchor" id="mrjHome">
+  <div class="mrj-wrap">
+    <div class="mrj-hero-grid">
+      <div>
+        <div class="mrj-eyebrow">孟若羽 金寶娜 · 品牌官网</div>
+        <h1 class="mrj-hero-title">孟若羽 <em>金寶娜</em></h1>
+        <p class="mrj-hero-sub">两个人的影像品牌，记录生活里真实、温暖、有褶皱的部分。这里是孟若羽 金寶娜官方网站，我们把日子拍成故事，也邀请你一起写下去。</p>
+        <div class="mrj-badges">
+          <span class="mrj-badge mrj-badge-hot">原创内容</span>
+          <span class="mrj-badge">高清影像</span>
+          <span class="mrj-badge">生活记录</span>
+          <span class="mrj-badge">品牌故事</span>
+          <span class="mrj-badge">持续运营</span>
+        </div>
+        <div class="mrj-cta">
+          <a class="mrj-btn mrj-btn-primary" href="#mrjFocus">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 7l8 5-8 5V7z" fill="#fff"/></svg>
+            浏览焦点内容
+          </a>
+          <a class="mrj-btn mrj-btn-ghost" href="#mrjCreators">认识创作者</a>
+          <button class="mrj-btn mrj-btn-ghost" id="mrjOpenSubmitHero" type="button">投稿 / 报名</button>
+        </div>
+        <div class="mrj-stats">
+          <div class="mrj-stat"><b class="mrj-count" data-target="268">0</b><span>原创影像作品</span></div>
+          <div class="mrj-stat"><b class="mrj-count" data-target="42">0</b><span>合作创作者（位）</span></div>
+          <div class="mrj-stat"><b class="mrj-count" data-target="96" data-suffix="万">0</b><span>累计播放（次）</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="mrj-cover">
+          <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="孟若羽 金寶娜 双人品牌主视觉 城市清晨">
+            <defs>
+              <linearGradient id="mrjHeroSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffd9b0"/><stop offset="0.55" stop-color="#ffb08a"/><stop offset="1" stop-color="#e86a8a"/>
+              </linearGradient>
+              <linearGradient id="mrjHeroGround" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3b2a35"/><stop offset="1" stop-color="#221722"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="400" fill="url(#mrjHeroSky)"/>
+            <circle cx="500" cy="120" r="46" fill="#fff2d0" opacity="0.92"/>
+            <circle cx="500" cy="120" r="86" fill="#ffdfa0" opacity="0.28"/>
+            <path d="M0 258 L96 206 L164 236 L240 192 L318 232 L398 190 L476 230 L556 196 L640 236 L640 400 L0 400 Z" fill="#5a3b46" opacity="0.55"/>
+            <path d="M0 292 L90 258 L180 288 L268 252 L360 290 L448 254 L540 288 L640 258 L640 400 L0 400 Z" fill="url(#mrjHeroGround)"/>
+            <g opacity="0.96">
+              <circle cx="258" cy="250" r="20" fill="#ffd2bd"/>
+              <rect x="242" y="270" width="32" height="72" rx="14" fill="#2f2330"/>
+              <rect x="250" y="336" width="10" height="42" rx="5" fill="#2f2330"/>
+              <rect x="264" y="336" width="10" height="42" rx="5" fill="#2f2330"/>
+              <circle cx="342" cy="262" r="18" fill="#ffe0c2"/>
+              <rect x="328" y="280" width="28" height="64" rx="13" fill="#e8466c"/>
+              <rect x="334" y="338" width="9" height="36" rx="4" fill="#c2335a"/>
+              <rect x="346" y="338" width="9" height="36" rx="4" fill="#c2335a"/>
+            </g>
+            <g opacity="0.7" fill="#ffcfa8">
+              <rect x="60" y="300" width="4" height="52" rx="2"/>
+              <rect x="560" y="306" width="4" height="48" rx="2"/>
+            </g>
+            <g opacity="0.2" fill="#fff">
+              <circle cx="120" cy="80" r="3"/><circle cx="180" cy="120" r="2"/><circle cx="90" cy="150" r="2.5"/><circle cx="600" cy="70" r="2"/>
+            </g>
+          </svg>
+          <span class="mrj-play-pill"><i></i> 品牌主视觉 · 清晨双人记录</span>
+          <div class="mrj-cover-caption">
+            <h3>把两个人的日常，拍成一部慢下来的电影</h3>
+            <p>孟若羽 · 金寶娜 合作影像企划 · 2026 冬季</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 关键词介绍与深度解析 -->
+<section class="mrj-section mrj-anchor" id="mrjAbout" style="padding-top:10px">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">关于这个品牌</div>
+        <h2>孟若羽 金寶娜 是谁，我们在做什么</h2>
+        <p>一个由两位创作者共同运营的影像品牌，也是一份持续更新的生活档案。</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1.35fr .65fr;gap:34px;align-items:start" class="mrj-about-grid">
+      <div>
+        <p>孟若羽 金寶娜，是一个由孟若羽与金寶娜两位创作者共同发起的影像品牌。它不是某一次拍摄的合集，而是一段持续生长的时间：从最早用手机拍下的阳台落日，到后来在陌生城市的清晨街头守候光线，再到如今拥有完整拍摄、剪辑、发布与社区互动的原创内容体系。作为孟若羽 金寶娜官方网站，我们在这里集中呈现品牌故事、精品内容、创作者档案与企业动态，让每一位来到这里的观众，能系统地理解我们为什么拍、怎么拍、以及接下来还要拍什么。</p>
+        <p>孟若羽负责影像的叙事与结构，擅长把日常里容易被忽略的瞬间组织成有呼吸感的段落；金寶娜负责手作、食物与细节场景的呈现，她相信触感是有记忆的，于是把布料、木器、热气腾腾的厨房都收进镜头里。两种气质在同一个品牌下并置，形成了一种不着急的节奏——不追求爆点，不讨好算法，只希望每一支片子都能在某个安静的夜晚被完整地看完。这也是我们对“品质”的理解：不是更炫的技术，而是更诚实的态度。</p>
+        <p>品牌成立至今，我们持续在垂直领域深耕，围绕日常记录、城市探索、手作与食物、人物访谈、创作幕后五条内容线索展开创作。作为一家以原创为核心的企业化运营团队，我们建立了稳定的选题机制、拍摄规范与发布节奏，也为合作创作者提供选题共创、剪辑支持与社区运营建议。我们希望孟若羽 金寶娜不只是一个名字，而是一个值得信赖的内容标记——观众看到这个标签，就知道内容是被认真对待过的。</p>
+        <p>在内容生态的搭建上，我们坚持三件事。第一是真实：镜头里的厨房会有油烟，街道会有噪音，人物会有停顿和沉默，我们不把这些剪掉，因为那正是生活的质感。第二是陪伴：影像不是一次性的消费品，我们希望它能在观众的人生阶段里留下位置，有人在通勤路上看，有人在失眠时看，有人在搬家那天重看，这些都是我们继续创作的动力。第三是共创：社区里的每一条留言、每一次投稿，都会进入我们的选题会，成为下一支片子的起点。用户的偏好与建议，实实在在地影响着品牌的方向。</p>
+        <p>如果你第一次听说孟若羽 金寶娜，可以从焦点内容开始。那里有我们最满意的几部作品，也有正在更新的系列专题；如果你已经关注很久，欢迎去看看创作者矩阵里的新面孔，或者到动态区了解最近的官方发布。我们相信，一个真正有生命力的视频品牌，需要的不只是好内容，还需要一个愿意说话、愿意倾听的社区。这也是我们把自己定义为“社区型影像品牌”的原因——作品是入口，人与人的连接才是终点。</p>
+      </div>
+      <aside style="background:#fff;border:1px solid var(--mrj-line);border-radius:20px;padding:24px;box-shadow:var(--mrj-shadow)">
+        <h3 style="margin-bottom:14px">品牌关键词</h3>
+        <div class="mrj-chips" style="margin-bottom:18px">
+          <span class="mrj-chip">原创影像</span>
+          <span class="mrj-chip">生活记录</span>
+          <span class="mrj-chip">城市探索</span>
+          <span class="mrj-chip">手作日常</span>
+          <span class="mrj-chip">人物访谈</span>
+          <span class="mrj-chip">创作幕后</span>
+          <span class="mrj-chip">社区共创</span>
+        </div>
+        <h3 style="margin-bottom:10px">内容更新节奏</h3>
+        <p style="font-size:13.5px;margin-bottom:8px">周一 · 城市手记系列</p>
+        <p style="font-size:13.5px;margin-bottom:8px">周三 · 手作与食物</p>
+        <p style="font-size:13.5px;margin-bottom:8px">周五 · 双人合拍</p>
+        <p style="font-size:13.5px;margin-bottom:0">周日 · 社区精选与投稿反馈</p>
+        <div style="margin-top:18px;padding-top:16px;border-top:1px dashed var(--mrj-line);font-size:13px;color:var(--mrj-sub)">
+          想更早看到新片？打开页面右上角的收藏入口，或直接在下方订阅更新。
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="mrj-section mrj-anchor" id="mrjFocus">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">焦点视频</div>
+        <h2>本周值得完整看完的几支片子</h2>
+        <p>从孟若羽的城市手记到金寶娜的厨房实验，以下内容由品牌编辑团队推荐。</p>
+      </div>
+      <a class="mrj-more" href="#mrjFeed">查看全部内容 →</a>
+    </div>
+    <div class="mrj-focus-grid">
+      <div class="mrj-focus-main">
+        <svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="焦点视频 城市手记冬 清晨街角的孟若羽">
+          <defs>
+            <linearGradient id="mrjF1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2c3550"/><stop offset=".6" stop-color="#5a6b8c"/><stop offset="1" stop-color="#c9a08a"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="360" fill="url(#mrjF1)"/>
+          <circle cx="470" cy="96" r="40" fill="#ffe9c4" opacity=".85"/>
+          <g fill="#1b2233" opacity=".92">
+            <rect x="0" y="210" width="130" height="150"/>
+            <rect x="150" y="170" width="90" height="190"/>
+            <rect x="260" y="226" width="110" height="134"/>
+            <rect x="390" y="150" width="80" height="210"/>
+            <rect x="490" y="196" width="150" height="164"/>
+          </g>
+          <g fill="#ffd9a8" opacity=".55">
+            <rect x="26" y="248" width="16" height="20"/><rect x="60" y="248" width="16" height="20"/>
+            <rect x="176" y="206" width="14" height="18"/><rect x="206" y="206" width="14" height="18"/>
+            <rect x="418" y="192" width="14" height="18"/><rect x="448" y="192" width="14" height="18"/>
+            <rect x="526" y="230" width="16" height="20"/><rect x="560" y="230" width="16" height="20"/>
+          </g>
+          <rect x="0" y="292" width="640" height="68" fill="#151a28" opacity=".9"/>
+          <g>
+            <circle cx="300" cy="252" r="15" fill="#ffd8c0"/>
+            <rect x="288" y="267" width="24" height="50" rx="10" fill="#e8466c"/>
+            <rect x="293" y="312" width="8" height="28" rx="4" fill="#2b2230"/>
+            <rect x="303" y="312" width="8" height="28" rx="4" fill="#2b2230"/>
+          </g>
+          <path d="M0 320 L640 320" stroke="#ffe2b8" stroke-width="1.5" opacity=".4"/>
+        </svg>
+        <span class="mrj-play-pill"><i></i> 本周焦点</span>
+        <div class="mrj-cover-caption">
+          <h3>城市手记·冬 | 一个人在清晨六点的街上走了两公里</h3>
+          <p>孟若羽 · 18 分 42 秒 · 更新于 11 月 19 日</p>
+        </div>
+      </div>
+      <div class="mrj-focus-side">
+        <article class="mrj-mini">
+          <div class="mrj-mini-thumb">
+            <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="金寶娜手作课堂 旧毛衣改造 木桌上的针线">
+              <rect width="300" height="200" fill="#f3e2cf"/>
+              <rect x="40" y="52" width="120" height="110" rx="6" fill="#d8795f"/>
+              <rect x="58" y="72" width="84" height="72" rx="4" fill="#f0b6a0"/>
+              <path d="M58 100 h84 M58 124 h84" stroke="#fff" stroke-width="3" opacity=".6"/>
+              <circle cx="212" cy="88" r="26" fill="none" stroke="#8a5a3c" stroke-width="4"/>
+              <path d="M212 62 v52 M186 88 h52" stroke="#8a5a3c" stroke-width="3"/>
+              <rect x="176" y="132" width="86" height="10" rx="5" fill="#c98f66"/>
+              <rect x="176" y="150" width="62" height="8" rx="4" fill="#e0b48c"/>
+            </svg>
+          </div>
+          <div class="mrj-mini-body">
+            <h4>旧毛衣改造计划：一件穿了八年的衣服如何重新被需要</h4>
+            <p class="mrj-mini-meta">金寶娜 · 手作课堂 · 12 分 05 秒</p>
+          </div>
+        </article>
+        <article class="mrj-mini">
+          <div class="mrj-mini-thumb">
+            <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="双人合作 一起做饭的第200天 厨房里的热气">
+              <rect width="300" height="200" fill="#2c2320"/>
+              <rect x="0" y="140" width="300" height="60" fill="#4a382f"/>
+              <ellipse cx="150" cy="140" rx="86" ry="16" fill="#6b4b3a"/>
+              <ellipse cx="150" cy="132" rx="66" ry="16" fill="#d96a3c"/>
+              <path d="M104 118 q12 -24 24 0 q12 -24 24 0 q12 -24 24 0" stroke="#ffd9a8" stroke-width="4" fill="none" opacity=".8"/>
+              <circle cx="238" cy="88" r="18" fill="#ffd8c0"/>
+              <circle cx="72" cy="96" r="16" fill="#ffe0c2"/>
+            </svg>
+          </div>
+          <div class="mrj-mini-body">
+            <h4>一起做饭的第 200 天：我们终于把菜单写进了冰箱贴</h4>
+            <p class="mrj-mini-meta">双人合拍 · 9 分 30 秒</p>
+          </div>
+        </article>
+        <article class="mrj-mini">
+          <div class="mrj-mini-thumb">
+            <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="创作者访谈 镜头外的十分钟 绿色植物前的对话">
+              <rect width="300" height="200" fill="#dfe9d8"/>
+              <circle cx="96" cy="86" r="34" fill="#3e6b4a"/>
+              <circle cx="130" cy="72" r="24" fill="#5d8f68"/>
+              <circle cx="216" cy="118" r="26" fill="#ffd8c0"/>
+              <rect x="200" y="140" width="34" height="52" rx="12" fill="#c9543f"/>
+              <rect x="60" y="150" width="120" height="10" rx="5" fill="#b7c8a9"/>
+            </svg>
+          </div>
+          <div class="mrj-mini-body">
+            <h4>镜头外的十分钟：关于疲惫、分歧和坚持下去的理由</h4>
+            <p class="mrj-mini-meta">人物访谈 · 14 分 12 秒</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="mrj-section mrj-anchor" id="mrjFeed" style="background:linear-gradient(180deg,#fdf9f4,#fbf1e7)">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">精品内容</div>
+        <h2>正在被反复打开的原创影像</h2>
+        <p>标签可以筛选，喜欢可以点亮，收藏会在本页暂时记住你的偏好。</p>
+      </div>
+    </div>
+    <div class="mrj-chips" id="mrjFilterChips" style="margin-bottom:24px">
+      <button class="mrj-chip mrj-active" data-filter="all" type="button">全部</button>
+      <button class="mrj-chip" data-filter="城市" type="button">城市探索</button>
+      <button class="mrj-chip" data-filter="手作" type="button">手作日常</button>
+      <button class="mrj-chip" data-filter="食物" type="button">食物与厨房</button>
+      <button class="mrj-chip" data-filter="访谈" type="button">人物访谈</button>
+      <button class="mrj-chip" data-filter="幕后" type="button">创作幕后</button>
+    </div>
+    <div class="mrj-video-grid" id="mrjVideoGrid">
+
+      <article class="mrj-video-card" data-tags="城市 幕后">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="雨后的旧城区 撑伞走过石板路">
+            <rect width="400" height="225" fill="#4a5c72"/>
+            <rect x="0" y="150" width="400" height="75" fill="#2b3746"/>
+            <g fill="#63788f"><rect x="20" y="60" width="70" height="95"/><rect x="112" y="34" width="54" height="121"/><rect x="192" y="80" width="80" height="75"/><rect x="294" y="46" width="66" height="109"/></g>
+            <g fill="#ffd9a0" opacity=".7"><rect x="34" y="80" width="10" height="12"/><rect x="58" y="80" width="10" height="12"/><rect x="126" y="54" width="9" height="11"/><rect x="146" y="54" width="9" height="11"/><rect x="310" y="66" width="10" height="12"/></g>
+            <path d="M0 176 q60 -14 120 0 q60 14 120 0 q60 -14 160 0" stroke="#9fb4c9" stroke-width="3" fill="none" opacity=".6"/>
+            <circle cx="210" cy="140" r="10" fill="#ffd8c0"/>
+            <path d="M186 155 q24 -22 48 0 Z" fill="#e8466c"/>
+            <rect x="206" y="150" width="8" height="30" rx="4" fill="#2b2230"/>
+          </svg>
+          <span class="mrj-video-tag">城市探索</span>
+          <span class="mrj-video-duration">16:20</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>雨后的旧城区：撑伞走过那条被我们拍过三次的石板路</h3>
+          <p>同一段路，三个季节，三种心情。这次孟若羽决定不剪掉雨声。</p>
+          <div class="mrj-chips"><span class="mrj-chip">城市手记</span><span class="mrj-chip">雨声环境音</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#5a6b8c,#2c3550)">孟</span>
+            <span>孟若羽</span>
+            <small>11-17 · 4.2 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">1286</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mrj-video-card" data-tags="手作 食物">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="金寶娜的厨房 蒸笼与面团 暖色灯光">
+            <rect width="400" height="225" fill="#f2c98f"/>
+            <rect x="0" y="150" width="400" height="75" fill="#a86b42"/>
+            <ellipse cx="150" cy="150" rx="90" ry="18" fill="#8a5333"/>
+            <path d="M90 150 q60 -70 120 0" fill="#e8a35c"/>
+            <path d="M104 150 q46 -54 92 0" fill="#f6c98c"/>
+            <circle cx="150" cy="118" r="16" fill="#fdf1e0"/>
+            <g fill="#fff" opacity=".55"><circle cx="270" cy="70" r="20"/><circle cx="300" cy="54" r="12"/><circle cx="250" cy="52" r="9"/></g>
+            <rect x="296" y="130" width="66" height="52" rx="8" fill="#d96a3c"/>
+            <rect x="306" y="140" width="46" height="8" rx="4" fill="#ffe0c4"/>
+          </svg>
+          <span class="mrj-video-tag">食物与厨房</span>
+          <span class="mrj-video-duration">11:48</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>一次失败的蒸糕和一次成功的意外：厨房里的容错练习</h3>
+          <p>金寶娜把两次成品都放进片子，因为失败的部分更值得被记录。</p>
+          <div class="mrj-chips"><span class="mrj-chip">厨房实验</span><span class="mrj-chip">不加滤镜</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#f2a53c,#d96a3c)">金</span>
+            <span>金寶娜</span>
+            <small>11-16 · 3.7 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">964</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mrj-video-card" data-tags="城市 食物">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="夏夜路边摊 两个人吃着热汤面">
+            <rect width="400" height="225" fill="#2b2440"/>
+            <rect x="0" y="130" width="400" height="95" fill="#1a1628"/>
+            <g fill="#ffcf7a" opacity=".9"><circle cx="60" cy="60" r="7"/><circle cx="140" cy="42" r="5"/><circle cx="250" cy="66" r="6"/><circle cx="340" cy="48" r="5"/></g>
+            <rect x="40" y="112" width="140" height="12" rx="6" fill="#8a5a3c"/>
+            <ellipse cx="110" cy="112" rx="34" ry="10" fill="#e8466c"/>
+            <rect x="240" y="108" width="120" height="14" rx="7" fill="#6b4b3a"/>
+            <ellipse cx="300" cy="108" rx="30" ry="9" fill="#f2a53c"/>
+            <g><circle cx="150" cy="92" r="11" fill="#ffd8c0"/><rect x="142" y="103" width="16" height="32" rx="7" fill="#c9543f"/></g>
+            <g><circle cx="262" cy="88" r="10" fill="#ffe0c2"/><rect x="255" y="98" width="14" height="28" rx="6" fill="#5a6b8c"/></g>
+          </svg>
+          <span class="mrj-video-tag">城市探索</span>
+          <span class="mrj-video-duration">13:06</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>夏夜十点半的路边摊地图：我们吃了五家，聊了三件事</h3>
+          <p>从城东到城西，一碗热汤面能救回一个糟糕的白天。</p>
+          <div class="mrj-chips"><span class="mrj-chip">双人合拍</span><span class="mrj-chip">夜行记录</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#e8466c,#7a3a8c)">孟</span>
+            <span>孟若羽 金寶娜</span>
+            <small>11-14 · 5.6 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">2104</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mrj-video-card" data-tags="访谈 幕后">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="录音室里的一场长谈 两只麦克风">
+            <rect width="400" height="225" fill="#3b3a36"/>
+            <rect x="0" y="160" width="400" height="65" fill="#242322"/>
+            <circle cx="110" cy="80" r="30" fill="#5c5a52" opacity=".55"/>
+            <rect x="104" y="40" width="12" height="70" rx="6" fill="#c9c3b4"/>
+            <rect x="96" y="34" width="28" height="16" rx="6" fill="#e8e2d2"/>
+            <circle cx="286" cy="86" r="26" fill="#5c5a52" opacity=".55"/>
+            <rect x="281" y="50" width="10" height="66" rx="5" fill="#c9c3b4"/>
+            <rect x="274" y="44" width="24" height="14" rx="5" fill="#e8e2d2"/>
+            <path d="M130 176 h140" stroke="#e8a35c" stroke-width="3" opacity=".8"/>
+          </svg>
+          <span class="mrj-video-tag">人物访谈</span>
+          <span class="mrj-video-duration">22:34</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>长谈 | 拍了两百支片子之后，我们开始害怕什么</h3>
+          <p>关于创作疲惫、观众期待和自我怀疑，这一期没有剪掉沉默。</p>
+          <div class="mrj-chips"><span class="mrj-chip">深度访谈</span><span class="mrj-chip">不配乐</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#5c5a52,#242322)">羽</span>
+            <span>孟若羽</span>
+            <small>11-12 · 3.1 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">1408</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mrj-video-card" data-tags="手作 幕后">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="布艺工作室的下午 缝纫机与线轴">
+            <rect width="400" height="225" fill="#e8dcc9"/>
+            <rect x="0" y="168" width="400" height="57" fill="#b8996f"/>
+            <rect x="60" y="92" width="150" height="76" rx="10" fill="#8a6a4a"/>
+            <rect x="76" y="106" width="118" height="34" rx="5" fill="#d9c4a3"/>
+            <circle cx="240" cy="120" r="18" fill="#e8466c"/>
+            <circle cx="240" cy="120" r="8" fill="#fdf1e0"/>
+            <circle cx="292" cy="132" r="13" fill="#f2a53c"/>
+            <circle cx="320" cy="118" r="11" fill="#5a6b8c"/>
+            <path d="M76 156 h118" stroke="#e8e2d2" stroke-width="2" opacity=".7"/>
+          </svg>
+          <span class="mrj-video-tag">创作幕后</span>
+          <span class="mrj-video-duration">08:52</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>一个布包从图纸到成品的七天：把失败过程也放进来</h3>
+          <p>打版三次、拆线两次，金寶娜说这才是手作的真实节奏。</p>
+          <div class="mrj-chips"><span class="mrj-chip">手作课堂</span><span class="mrj-chip">过程记录</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#b8996f,#8a6a4a)">金</span>
+            <span>金寶娜</span>
+            <small>11-09 · 2.8 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">876</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="mrj-video-card" data-tags="城市 访谈">
+        <div class="mrj-video-thumb">
+          <svg viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" role="img" aria-label="老小区的院子 藤椅与晒太阳的邻居">
+            <rect width="400" height="225" fill="#cfd9c2"/>
+            <rect x="0" y="150" width="400" height="75" fill="#a8a68e"/>
+            <rect x="30" y="60" width="140" height="90" fill="#8c9a7e"/>
+            <rect x="48" y="78" width="34" height="34" fill="#e8e2d2"/>
+            <rect x="100" y="78" width="34" height="34" fill="#e8e2d2"/>
+            <path d="M230 150 l40 -50 l40 50 Z" fill="#7a3a3a"/>
+            <rect x="250" y="150" width="40" height="36" fill="#8a5a3c"/>
+            <circle cx="330" cy="126" r="14" fill="#ffd8c0"/>
+            <rect x="320" y="140" width="20" height="36" rx="8" fill="#5a6b8c"/>
+          </svg>
+          <span class="mrj-video-tag">人物访谈</span>
+          <span class="mrj-video-duration">18:20</span>
+          <div class="mrj-video-tri"><div><i></i></div></div>
+        </div>
+        <div class="mrj-video-body">
+          <h3>院子里的六位邻居：他们在这条街上住了四十年</h3>
+          <p>孟若羽用一台小机器，记录下老小区院子里的下午。</p>
+          <div class="mrj-chips"><span class="mrj-chip">在地文化</span><span class="mrj-chip">长镜头</span></div>
+          <div class="mrj-author-row">
+            <span class="mrj-avatar" style="background:linear-gradient(135deg,#8c9a7e,#4a5c42)">孟</span>
+            <span>孟若羽</span>
+            <small>11-06 · 4.9 万次播放</small>
+          </div>
+          <div class="mrj-video-actions">
+            <button class="mrj-act mrj-like" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4c0 5-7 9.6-7 9.6Z" stroke="currentColor" stroke-width="1.7"/></svg><span class="mrj-like-num">1763</span></button>
+            <button class="mrj-act mrj-fav" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4h12v17l-6-4-6 4V4Z" stroke="currentColor" stroke-width="1.7"/></svg>收藏</button>
+            <button class="mrj-act mrj-share" type="button"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l6-4M9 12l6 4" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="6" r="2.4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="18" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>分享</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p id="mrjFilterEmpty" style="display:none;text-align:center;color:var(--mrj-sub);padding:30px 0">这个标签下暂时还没有内容，换个标签看看？</p>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="mrj-section mrj-anchor" id="mrjTopics">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">专题企划</div>
+        <h2>正在连载的长期企划</h2>
+        <p>专题不是合集，而是一种持续提问的方式。每个企划都有明确的问题意识和更新节奏。</p>
+      </div>
+    </div>
+    <div class="mrj-topic-grid">
+      <a class="mrj-topic" href="#mrjFeed">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="城市手记专题 高低错落的城市天际线">
+          <defs><linearGradient id="mrjT1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4a6b"/><stop offset="1" stop-color="#c98a7a"/></linearGradient></defs>
+          <rect width="400" height="500" fill="url(#mrjT1)"/>
+          <circle cx="300" cy="120" r="52" fill="#ffe2b0" opacity=".8"/>
+          <g fill="#1e2738" opacity=".9">
+            <rect x="0" y="280" width="90" height="220"/><rect x="106" y="230" width="70" height="270"/>
+            <rect x="192" y="300" width="100" height="200"/><rect x="308" y="250" width="92" height="250"/>
+          </g>
+          <g fill="#ffd9a0" opacity=".6"><rect x="18" y="316" width="16" height="22"/><rect x="124" y="262" width="14" height="20"/><rect x="214" y="332" width="16" height="22"/><rect x="330" y="282" width="14" height="20"/></g>
+        </svg>
+        <div class="mrj-topic-body">
+          <span class="mrj-topic-status">连载中 · 第 6 集</span>
+          <h3>城市手记 · 冬</h3>
+          <p>孟若羽用一整个冬天，走过六条不同的街道，记录城市在清晨与深夜的两副面孔。</p>
+        </div>
+      </a>
+      <a class="mrj-topic" href="#mrjFeed">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="手作缓慢计划专题 工作台上铺开的布料与工具">
+          <rect width="400" height="500" fill="#ead8c2"/>
+          <rect x="0" y="330" width="400" height="170" fill="#c9a878"/>
+          <rect x="46" y="140" width="180" height="180" rx="10" fill="#d8795f"/>
+          <path d="M46 210 h180 M46 268 h180" stroke="#fff" stroke-width="4" opacity=".55"/>
+          <circle cx="300" cy="200" r="42" fill="none" stroke="#8a5a3c" stroke-width="6"/>
+          <path d="M300 158 v84 M258 200 h84" stroke="#8a5a3c" stroke-width="5"/>
+          <rect x="240" y="290" width="130" height="14" rx="7" fill="#a87a52"/>
+        </svg>
+        <div class="mrj-topic-body">
+          <span class="mrj-topic-status">连载中 · 第 4 期</span>
+          <h3>手作缓慢计划</h3>
+          <p>金寶娜的月度手作企划，从布艺到木器，坚持用完整过程对抗速成的焦虑。</p>
+        </div>
+      </a>
+      <a class="mrj-topic" href="#mrjFeed">
+        <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="双人厨房实验专题 桌面上的食材与手写菜谱">
+          <rect width="400" height="500" fill="#f0b477"/>
+          <rect x="0" y="300" width="400" height="200" fill="#9a5c38"/>
+          <ellipse cx="140" cy="300" rx="80" ry="22" fill="#7a4326"/>
+          <circle cx="120" cy="278" r="20" fill="#e8466c"/>
+          <circle cx="162" cy="270" r="15" fill="#5a8c4a"/>
+          <rect x="240" y="210" width="120" height="90" rx="6" fill="#fdf1e0" transform="rotate(-6 300 255)"/>
+          <path d="M258 240 h84 M258 262 h64 M258 284 h74" stroke="#b8996f" stroke-width="4" transform="rotate(-6 300 255)"/>
+        </svg>
+        <div class="mrj-topic-body">
+          <span class="mrj-topic-status">连载中 · 第 9 期</span>
+          <h3>双人厨房实验</h3>
+          <p>两个人、一间小厨房、每周一次失败或成功的晚餐，菜单由观众留言投票决定。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="mrj-section mrj-anchor" id="mrjCreators" style="background:linear-gradient(180deg,#fbf1e7,#fdf9f4)">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">创作者矩阵</div>
+        <h2>和我们一起把内容做下去的人</h2>
+        <p>品牌不只属于两个人。这些长期合作的创作者，构成了孟若羽 金寶娜内容生态的另一半。</p>
+      </div>
+    </div>
+    <div class="mrj-creator-grid">
+      <article class="mrj-creator">
+        <span class="mrj-avatar" style="background:linear-gradient(135deg,#5a6b8c,#2c3550)">孟</span>
+        <h3>孟若羽</h3>
+        <em>品牌主理人 · 城市记录</em>
+        <p>擅长用长镜头和自然声场记录城市，相信克制比表达更重要。</p>
+        <div class="mrj-creator-stats">
+          <div><b>128</b>作品</div>
+          <div><b>18.6 万</b>关注</div>
+        </div>
+        <button class="mrj-creator-btn mrj-open-profile" data-name="孟若羽" type="button">查看档案</button>
+      </article>
+      <article class="mrj-creator">
+        <span class="mrj-avatar" style="background:linear-gradient(135deg,#f2a53c,#d96a3c)">金</span>
+        <h3>金寶娜</h3>
+        <em>品牌主理人 · 手作与食物</em>
+        <p>把厨房和工作台当作拍摄现场，认为细节里的温度值得被放大。</p>
+        <div class="mrj-creator-stats">
+          <div><b>96</b>作品</div>
+          <div><b>15.2 万</b>关注</div>
+        </div>
+        <button class="mrj-creator-btn mrj-open-profile" data-name="金寶娜" type="button">查看档案</button>
+      </article>
+      <article class="mrj-creator">
+        <span class="mrj-avatar" style="background:linear-gradient(135deg,#8c9a7e,#4a5c42)">林</span>
+        <h3>林晚舟</h3>
+        <em>合作创作者 · 城市声音</em>
+        <p>声音设计师，负责品牌多支片子的环境音采集与后期混音。</p>
+        <div class="mrj-creator-stats">
+          <div><b>34</b>作品</div>
+          <div><b>3.8 万</b>关注</div>
+        </div>
+        <button class="mrj-creator-btn mrj-open-profile" data-name="林晚舟" type="button">查看档案</button>
+      </article>
+      <article class="mrj-creator">
+        <span class="mrj-avatar" style="background:linear-gradient(135deg,#e8466c,#7a3a8c)">周</span>
+        <h3>周未晞</h3>
+        <em>合作创作者 · 人物访谈</em>
+        <p>独立编导，擅长在访谈中留白，让被拍摄者自己找到节奏。</p>
+        <div class="mrj-creator-stats">
+          <div><b>21</b>作品</div>
+          <div><b>2.6 万</b>关注</div>
+        </div>
+        <button class="mrj-creator-btn mrj-open-profile" data-name="周未晞" type="button">查看档案</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 影像墙 -->
+<section class="mrj-section mrj-anchor" id="mrjWall">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">影像墙</div>
+        <h2>从片场和日常里截下来的一些画面</h2>
+        <p>这些是品牌内容的定格瞬间，也是我们判断一支片子是否成立的视觉线索。</p>
+      </div>
+    </div>
+    <div class="mrj-wall">
+      <div class="mrj-wall-item mrj-w3 mrj-h2">
+        <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 清晨窗口的光落在木地板上的长影">
+          <rect width="600" height="600" fill="#f4e3cd"/>
+          <rect x="0" y="420" width="600" height="180" fill="#c9a878"/>
+          <rect x="120" y="80" width="220" height="300" fill="#fdf6e8"/>
+          <path d="M120 80 L340 80 L340 380 L120 380 Z" fill="none" stroke="#b8996f" stroke-width="6"/>
+          <path d="M230 80 v300 M120 230 h220" stroke="#b8996f" stroke-width="5"/>
+          <path d="M340 380 L560 600 L360 600 L340 380 Z" fill="#ffe2b0" opacity=".75"/>
+          <circle cx="440" cy="180" r="26" fill="#e8466c" opacity=".8"/>
+        </svg>
+        <span>窗边的光 · 冬季拍摄札记</span>
+      </div>
+      <div class="mrj-wall-item mrj-w2 mrj-h2">
+        <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 手作工作台上散落的布料与剪刀">
+          <rect width="400" height="600" fill="#e0cdb2"/>
+          <rect x="0" y="380" width="400" height="220" fill="#a87a52"/>
+          <rect x="40" y="150" width="180" height="200" rx="8" fill="#c9543f" transform="rotate(-8 130 250)"/>
+          <path d="M40 220 h180 M40 290 h180" stroke="#fff" stroke-width="4" opacity=".45" transform="rotate(-8 130 250)"/>
+          <path d="M250 380 l50 -120 l40 20 l-50 120 Z" fill="#8a9aa8"/>
+          <circle cx="300" cy="300" r="12" fill="#5a6b8c"/>
+          <rect x="230" y="400" width="130" height="18" rx="9" fill="#6b4b3a"/>
+        </svg>
+        <span>工作台日常 · 布料与剪刀</span>
+      </div>
+      <div class="mrj-wall-item mrj-w1">
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 一碗热汤面的近景">
+          <rect width="300" height="300" fill="#3a2a26"/>
+          <ellipse cx="150" cy="180" rx="100" ry="42" fill="#8a5a3c"/>
+          <ellipse cx="150" cy="172" rx="82" ry="34" fill="#d96a3c"/>
+          <path d="M92 150 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0" stroke="#ffe0b0" stroke-width="5" fill="none"/>
+          <circle cx="130" cy="176" r="7" fill="#fdf1e0"/>
+          <circle cx="170" cy="184" r="6" fill="#5a8c4a"/>
+        </svg>
+        <span>深夜面档</span>
+      </div>
+      <div class="mrj-wall-item mrj-w1">
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 阴天街道上的自行车影子">
+          <rect width="300" height="300" fill="#9fb0bf"/>
+          <rect x="0" y="210" width="300" height="90" fill="#5a6673"/>
+          <circle cx="96" cy="196" r="34" fill="none" stroke="#2b3440" stroke-width="8"/>
+          <circle cx="204" cy="196" r="34" fill="none" stroke="#2b3440" stroke-width="8"/>
+          <path d="M96 196 L140 140 L204 196 M140 140 L168 196" stroke="#2b3440" stroke-width="7" fill="none"/>
+          <path d="M0 260 h300" stroke="#cfd9e0" stroke-width="3" opacity=".6"/>
+        </svg>
+        <span>阴天的车辙</span>
+      </div>
+      <div class="mrj-wall-item mrj-w2">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 老式收音机与磁带">
+          <rect width="400" height="300" fill="#d9c9a8"/>
+          <rect x="60" y="80" width="180" height="120" rx="10" fill="#6b4b3a"/>
+          <circle cx="110" cy="140" r="24" fill="#c9a878"/>
+          <circle cx="170" cy="140" r="24" fill="#c9a878"/>
+          <rect x="66" y="182" width="168" height="12" rx="6" fill="#3a2a26"/>
+          <rect x="260" y="120" width="100" height="62" rx="6" fill="#3a3a3a"/>
+          <rect x="272" y="136" width="76" height="34" rx="4" fill="#e8e2d2"/>
+          <circle cx="292" cy="152" r="10" fill="#3a3a3a"/>
+          <circle cx="330" cy="152" r="10" fill="#3a3a3a"/>
+        </svg>
+        <span>旧收音机里的夏天</span>
+      </div>
+      <div class="mrj-wall-item mrj-w1">
+        <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="影像墙 窗台上的植物与玻璃瓶">
+          <rect width="300" height="300" fill="#dfe9d8"/>
+          <rect x="0" y="210" width="300" height="90" fill="#b8996f"/>
+          <path d="M140 210 v-70" stroke="#4a7a4a" stroke-width="6"/>
+          <circle cx="140" cy="128" r="30" fill="#5d8f68"/>
+          <circle cx="112" cy="150" r="20" fill="#7aa881"/>
+          <path d="M186 210 l14 -60 l24 0 l14 60 Z" fill="#96b4c9" opacity=".8"/>
+          <rect x="198" y="150" width="14" height="52" rx="6" fill="#4a7a4a" opacity=".7"/>
+        </svg>
+        <span>窗台的绿</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="mrj-section mrj-anchor" id="mrjReviews">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">社区口碑</div>
+        <h2>来自观众与投稿者的真实反馈</h2>
+        <p>我们保留不同语气的评价，包括建议和批评，因为这才是一个社区该有的样子。</p>
+      </div>
+    </div>
+    <div class="mrj-review-grid">
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#5a6b8c">阿</span><div><b>阿柴不加班</b><small>关注 8 个月</small></div></div>
+        <p>孟若羽的雨声那段我反复听了三次。第一次是看画面，第二次闭眼听，第三次是加班到十一点回家的路上。谢谢有人愿意把环境音留着。</p>
+        <div class="mrj-stars">★★★★★</div>
+      </div>
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#d96a3c">小</span><div><b>小满手作</b><small>投稿作者</small></div></div>
+        <p>投稿之后收到了编辑的修改建议，很具体，不是那种模板回复。按建议重剪了一版，播放翻了三倍，但更重要的是我自己看懂了问题在哪。</p>
+        <div class="mrj-stars">★★★★★</div>
+      </div>
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#4a7a4a">喜</span><div><b>喜树</b><small>关注 1 年半</small></div></div>
+        <p>金寶娜的厨房系列是我每周的固定节目。失败的蒸糕那期最好笑也最治愈，因为我昨天也做失败了。</p>
+        <div class="mrj-stars">★★★★☆</div>
+      </div>
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#7a3a8c">Z</span><div><b>Zoe 在路上</b><small>关注 4 个月</small></div></div>
+        <p>建议可以多出一点拍摄技术向的内容，比如手机怎么拍出那种自然的光感。知道你们偏内容，但真的想学。</p>
+        <div class="mrj-stars">★★★★☆</div>
+      </div>
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#b8996f">老</span><div><b>老陈的院子</b><small>访谈参与嘉宾</small></div></div>
+        <p>拍我们院子那期，我一开始以为会很拘束。结果他们在我家坐了一下午，就是聊天，机器几乎看不见。成片很自然，邻居们都说像。</p>
+        <div class="mrj-stars">★★★★★</div>
+      </div>
+      <div class="mrj-review">
+        <div class="mrj-review-top"><span class="mrj-avatar" style="background:#3a4a6b">夜</span><div><b>夜航船</b><small>关注 2 年</small></div></div>
+        <p>从最早只有几千播放看到现在，能感觉到你们在做减法而不是加法。专题企划这一点特别难得，希望城市手记能一直做下去。</p>
+        <div class="mrj-stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌故事 -->
+<section class="mrj-section mrj-anchor" id="mrjStory">
+  <div class="mrj-wrap">
+    <div class="mrj-story">
+      <div class="mrj-story-grid">
+        <div class="mrj-story-text">
+          <div class="mrj-eyebrow">品牌故事</div>
+          <h2>从一台旧相机，到一个值得信赖的内容生态</h2>
+          <p>2020 年冬天，孟若羽用一台二手相机拍下第一条视频，只有 41 秒，画面里是楼下便利店的热饮柜。金寶娜在评论区留了第一句话：“这个光很好看。”后来的事情，就是两个人一起把这件事做成了品牌。</p>
+          <p>我们始终记得，最初拍片不是为了被多少人看到，而是为了在时间过去之后，还能找回某个具体的下午。这种动机决定了孟若羽 金寶娜的气质：不追热点，不做情绪营销，把精力放在选题、拍摄和后期上，让每一支片子经得起重复观看。</p>
+          <p>作为持续运营的品牌，我们也认真对待行业责任。所有原创内容均标注创作者与拍摄信息，合作内容公开透明，投稿作品会明确标注是否经过编辑修改。我们相信，一个品牌的长期价值，来自它对自己的诚实程度。</p>
+          <div class="mrj-story-tags">
+            <span>原创正版</span><span>高清画质</span><span>用户至上</span><span>匠心制作</span><span>包容多元</span><span>行业深耕</span>
+          </div>
+        </div>
+        <div class="mrj-story-visual">
+          <svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="品牌故事 旧相机与桌面上的手写笔记">
+            <rect width="600" height="500" fill="#4a342a"/>
+            <rect x="0" y="330" width="600" height="170" fill="#33261f"/>
+            <rect x="110" y="140" width="210" height="150" rx="14" fill="#1f1a17"/>
+            <circle cx="215" cy="215" r="52" fill="#3a332e"/>
+            <circle cx="215" cy="215" r="30" fill="#8a9aa8"/>
+            <circle cx="215" cy="215" r="14" fill="#1f1a17"/>
+            <rect x="140" y="112" width="52" height="22" rx="6" fill="#2b2420"/>
+            <rect x="340" y="200" width="160" height="100" rx="6" fill="#f0e2c8" transform="rotate(6 420 250)"/>
+            <path d="M360 230 h110 M360 254 h88 M360 278 h100" stroke="#a87a52" stroke-width="5" transform="rotate(6 420 250)"/>
+            <path d="M60 400 q60 -30 120 0" stroke="#e8a35c" stroke-width="4" fill="none" opacity=".7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 -->
+<section class="mrj-section mrj-anchor" id="mrjNews">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head">
+      <div>
+        <div class="mrj-eyebrow">企业动态</div>
+        <h2>官方发布与最近更新</h2>
+        <p>关于内容上线、活动报名与品牌合作的公开信息。</p>
+      </div>
+    </div>
+    <div class="mrj-news-grid">
+      <article class="mrj-news">
+        <div class="mrj-news-date"><b>19</b><span>11 月</span></div>
+        <div>
+          <h3>《城市手记·冬》第一集正式上线</h3>
+          <p>孟若羽在清晨六点用两公里记录城市苏醒的过程，本集保留全部环境音。</p>
+        </div>
+      </article>
+      <article class="mrj-news">
+        <div class="mrj-news-date"><b>15</b><span>11 月</span></div>
+        <div>
+          <h3>手作课堂新一期：旧毛衣改造计划</h3>
+          <p>金寶娜开放投稿通道，欢迎分享你的旧衣改造过程，优秀作品将获得拍摄支持。</p>
+        </div>
+      </article>
+      <article class="mrj-news">
+        <div class="mrj-news-date"><b>10</b><span>11 月</span></div>
+        <div>
+          <h3>双人合作影像播放量突破 60 万</h3>
+          <p>《一起做饭的第 200 天》成为品牌年度高播放作品之一，感谢每一位完整看完的观众。</p>
+        </div>
+      </article>
+      <article class="mrj-news">
+        <div class="mrj-news-date"><b>05</b><span>11 月</span></div>
+        <div>
+          <h3>创作者招募计划开启报名</h3>
+          <p>面向生活记录类作者开放合作申请，提供选题共创、剪辑建议与社区运营支持。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 帮助 -->
+<section class="mrj-section mrj-anchor" id="mrjFaq" style="background:linear-gradient(180deg,#fbf1e7,#fdf9f4)">
+  <div class="mrj-wrap">
+    <div class="mrj-section-head" style="justify-content:center;text-align:center">
+      <div>
+        <div class="mrj-eyebrow">常见问题</div>
+        <h2>关于孟若羽 金寶娜，你可能想知道的</h2>
+      </div>
+    </div>
+    <div class="mrj-faq">
+      <details>
+        <summary>孟若羽 金寶娜是一个品牌还是两位创作者？</summary>
+        <div class="mrj-faq-body">两者都是。孟若羽与金寶娜是两位真实存在的创作者，同时也共同运营一个影像品牌。品牌官网上的内容由两人主导创作，并联合多位长期合作创作者共同完成。</div>
+      </details>
+      <details>
+        <summary>内容大概多久更新一次？</summary>
+        <div class="mrj-faq-body">常规节奏为每周三到四条：城市手记系列在周一，手作与食物在周三，双人合拍在周五，周日会发布社区精选与投稿反馈。专题企划按集数连载，会提前在动态区公布排期。</div>
+      </details>
+      <details>
+        <summary>我想投稿，需要满足什么条件？</summary>
+        <div class="mrj-faq-body">题材不限，但需要是原创拍摄或原创手作记录，画面清晰、有完整叙事即可。投稿后在七个工作日内会收到编辑反馈，通过的内容会进入社区精选或联合创作计划。</div>
+      </details>
+      <details>
+        <summary>品牌是否接受商业合作？</summary>
+        <div class="mrj-faq-body">接受，但会控制比例。我们只合作与品牌调性一致的产品或服务，并在片中明确标注合作信息。如果你的项目强调真实、日常与长期价值，欢迎在联系区留言。</div>
+      </details>
+      <details>
+        <summary>页面上的收藏和点赞会被保存吗？</summary>
+        <div class="mrj-faq-body">目前收藏与点赞仅在本页面内即时生效，用于表达你的偏好，刷新后会重置。完整账号体系正在规划中，后续会支持跨设备同步。</div>
+      </details>
+      <details>
+        <summary>如何第一时间知道新内容发布？</summary>
+        <div class="mrj-faq-body">可以关注页头的公告条，所有官方发布都会在那里置顶提示。也可以在联系区留下联系方式，新专题上线时我们会发送简短通知。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 联系与投稿 -->
+<section class="mrj-section mrj-anchor" id="mrjContact">
+  <div class="mrj-wrap">
+    <div class="mrj-contact">
+      <div>
+        <div class="mrj-eyebrow">联系我们</div>
+        <h2>有想法、有作品，或者只是想聊聊</h2>
+        <p>孟若羽 金寶娜官方网站欢迎来自观众、创作者与合作伙伴的声音。留言会在三个工作日内得到回复，投稿类内容会由编辑团队单独评估。</p>
+        <div class="mrj-contact-list">
+          <div><b>合作邮箱</b> hello@mrj-jinbaona.studio</div>
+          <div><b>投稿入口</b> 每周一至周五开放提交</div>
+          <div><b>办公地点</b> 城市影像工作室 · 老城区院落二层</div>
+          <div><b>媒体咨询</b> press@mrj-jinbaona.studio</div>
+        </div>
+      </div>
+      <div class="mrj-contact-card">
+        <h3>快速通道</h3>
+        <p>选择你的身份，我们会把信息转给对应的小组。</p>
+        <button class="mrj-btn mrj-btn-primary" id="mrjOpenSubmit" type="button">我要投稿 / 报名</button>
+        <button class="mrj-btn mrj-btn-ghost" id="mrjOpenFeedback" type="button">反馈与建议</button>
+        <div class="mrj-share">
+          <button class="mrj-copy-link" type="button">复制本页链接</button>
+          <button class="mrj-share-tip" type="button">分享到社交平台</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="mrj-footer">
+  <div class="mrj-wrap">
+    <div class="mrj-footer-grid">
+      <div>
+        <a class="mrj-logo" href="#mrjHome">
+          <span class="mrj-logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M9 7l8 5-8 5V7z" fill="#fff"/></svg></span>
+          <span>孟若羽 金寶娜<small>MRJ · JINBAONA</small></span>
+        </a>
+        <p>孟若羽 金寶娜官方网站，一个由两位创作者共同运营的影像品牌。我们持续记录真实的生活，也为社区里的每一位创作者提供被看见的机会。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <a href="#mrjFocus">焦点视频</a>
+        <a href="#mrjFeed">精品内容</a>
+        <a href="#mrjTopics">专题企划</a>
+        <a href="#mrjWall">影像墙</a>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <a href="#mrjStory">品牌故事</a>
+        <a href="#mrjCreators">创作者矩阵</a>
+        <a href="#mrjNews">企业动态</a>
+        <a href="#mrjFaq">常见问题</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#mrjContact">投稿报名</a>
+        <a href="#mrjContact">合作联系</a>
+        <a href="#mrjReviews">社区口碑</a>
+        <a href="#mrjHome">返回顶部</a>
+      </div>
+    </div>
+    <div class="mrj-footer-bottom">
+      <span>© 2026 孟若羽 金寶娜 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案信息：影像内容均为原创，转载请联系授权</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="mrj-top" id="mrjTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V6M6 12l6-6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Toast -->
+<div class="mrj-toast" id="mrjToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="mrj-modal-mask" id="mrjSubmitModal">
+  <div class="mrj-modal" role="dialog" aria-modal="true" aria-labelledby="mrjSubmitTitle">
+    <button class="mrj-modal-close" type="button" data-close="mrjSubmitModal" aria-label="关闭">×</button>
+    <h3 id="mrjSubmitTitle">投稿 / 报名</h3>
+    <p>填写基本信息，编辑团队会在三个工作日内回复你。</p>
+    <form id="mrjSubmitForm">
+      <div class="mrj-field"><label for="mrjSName">你的名字</label><input id="mrjSName" type="text" placeholder="怎么称呼你" required></div>
+      <div class="mrj-field"><label for="mrjSContact">联系方式</label><input id="mrjSContact" type="text" placeholder="邮箱或社交账号" required></div>
+      <div class="mrj-field"><label for="mrjSTopic">投稿方向</label><input id="mrjSTopic" type="text" placeholder="例如：城市记录 / 手作 / 人物访谈"></div>
+      <div class="mrj-field"><label for="mrjSDesc">作品简介</label><textarea id="mrjSDesc" placeholder="简单描述你的作品或想法"></textarea></div>
+      <button class="mrj-btn mrj-btn-primary" type="submit" style="width:100%;justify-content:center">提交</button>
+    </form>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="mrj-modal-mask" id="mrjFeedbackModal">
+  <div class="mrj-modal" role="dialog" aria-modal="true" aria-labelledby="mrjFeedbackTitle">
+    <button class="mrj-modal-close" type="button" data-close="mrjFeedbackModal" aria-label="关闭">×</button>
+    <h3 id="mrjFeedbackTitle">反馈与建议</h3>
+    <p>无论是对内容的建议，还是页面体验的问题，我们都想听。</p>
+    <form id="mrjFeedbackForm">
+      <div class="mrj-field"><label for="mrjFType">反馈类型</label><input id="mrjFType" type="text" placeholder="内容建议 / 合作咨询 / 其他"></div>
+      <div class="mrj-field"><label for="mrjFContent">具体内容</label><textarea id="mrjFContent" placeholder="请尽量具体描述，方便我们处理" required></textarea></div>
+      <button class="mrj-btn mrj-btn-primary" type="submit" style="width:100%;justify-content:center">发送反馈</button>
+    </form>
+  </div>
+</div>
+
+<!-- 创作者档案弹窗 -->
+<div class="mrj-modal-mask" id="mrjProfileModal">
+  <div class="mrj-modal" role="dialog" aria-modal="true" aria-labelledby="mrjProfileTitle">
+    <button class="mrj-modal-close" type="button" data-close="mrjProfileModal" aria-label="关闭">×</button>
+    <h3 id="mrjProfileTitle">创作者档案</h3>
+    <p id="mrjProfileDesc">这里是创作者的基本介绍与近期动态。</p>
+    <div class="mrj-chips" id="mrjProfileTags"></div>
+    <button class="mrj-btn mrj-btn-primary" type="button" id="mrjProfileFollow" style="width:100%;justify-content:center">关注这位创作者</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== Toast ===== */
+  var toastEl = document.getElementById('mrjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('mrj-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('mrj-show'); }, 2200);
+  }
+
+  /* ===== 移动端导航 ===== */
+  var burger = document.getElementById('mrjBurger');
+  var mobileNav = document.getElementById('mrjMobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('mrj-show');
+      burger.classList.toggle('mrj-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobileNav.classList.remove('mrj-show');
+        burger.classList.remove('mrj-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ===== 搜索反馈 ===== */
+  var SEARCH_INDEX = [
+    {key:'城市手记', desc:'专题 · 城市手记 · 冬，共 6 集连载中'},
+    {key:'雨', desc:'视频 · 雨后的旧城区：撑伞走过那条被我们拍过三次的石板路'},
+    {key:'金寶娜', desc:'创作者 · 金寶娜，手作与食物方向'},
+    {key:'手作', desc:'专题 · 手作缓慢计划，第 4 期连载中'},
+    {key:'厨房', desc:'专题 · 双人厨房实验，第 9 期连载中'},
+    {key:'孟若羽', desc:'创作者 · 孟若羽，城市记录方向'},
+    {key:'访谈', desc:'视频 · 长谈 | 拍了两百支片子之后，我们开始害怕什么'},
+    {key:'影像墙', desc:'板块 · 影像墙，收录品牌内容定格瞬间'}
+  ];
+  function doSearch(inputEl, feedbackEl){
+    var q = (inputEl.value || '').trim();
+    if(!q){ showToast('请输入想搜索的关键词'); return; }
+    var hit = null;
+    for(var i=0;i<SEARCH_INDEX.length;i++){
+      if(SEARCH_INDEX[i].key.indexOf(q) > -1 || q.indexOf(SEARCH_INDEX[i].key) > -1){ hit = SEARCH_INDEX[i]; break; }
+    }
+    var msg;
+    if(hit){ msg = '找到相关内容：' + hit.desc; }
+    else { msg = '暂时没有找到“' + q + '”的直接结果，试试 城市手记、手作、厨房 或 访谈'; }
+    if(feedbackEl){ feedbackEl.textContent = msg; }
+    showToast(msg);
+    if(hit && document.getElementById('mrjFeed')){
+      document.getElementById('mrjFeed').scrollIntoView({behavior:'smooth'});
+    }
+  }
+  var searchForm = document.getElementById('mrjSearchForm');
+  var searchInput = document.getElementById('mrjSearchInput');
+  if(searchForm && searchInput){
+    searchForm.addEventListener('submit', function(e){ e.preventDefault(); doSearch(searchInput, null); });
+  }
+  var searchFormM = document.getElementById('mrjSearchFormMobile');
+  var searchInputM = document.getElementById('mrjSearchInputMobile');
+  var feedbackM = document.getElementById('mrjMobileSearchFeedback');
+  if(searchFormM && searchInputM){
+    searchFormM.addEventListener('submit', function(e){ e.preventDefault(); doSearch(searchInputM, feedbackM); });
+  }
+
+  /* ===== 点赞 ===== */
+  document.querySelectorAll('.mrj-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('.mrj-like-num');
+      var n = parseInt((numEl.textContent||'0').replace(/[^\d]/g,''), 10) || 0;
+      var active = btn.classList.toggle('mrj-active');
+      numEl.textContent = active ? (n + 1) : Math.max(0, n - 1);
+      showToast(active ? '已点赞，谢谢你的喜欢' : '已取消点赞');
+    });
+  });
+
+  /* ===== 收藏 ===== */
+  document.querySelectorAll('.mrj-fav').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.classList.toggle('mrj-faved');
+      var svgPath = btn.querySelector('svg path');
+      if(svgPath){
+        svgPath.setAttribute('fill', f ? 'currentColor' : 'none');
+      }
+      showToast(f ? '已收藏，本页会记住你的选择' : '已取消收藏');
+    });
+  });
+
+  /* ===== 分享 ===== */
+  document.querySelectorAll('.mrj-share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('可分享至微信、微博或 QQ，感谢你让更多人看到原创影像');
+    });
+  });
+
+  /* ===== 复制链接 ===== */
+  document.querySelectorAll('.mrj-copy-link').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var url = location.href;
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(ta);
+        showToast('链接已复制到剪贴板');
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(fallback);
+      } else {
+        fallback();
+      }
+    });
+  });
+
+  document.querySelectorAll('.mrj-share-tip').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('点击浏览器分享按钮，或复制链接发送给朋友');
+    });
+  });
+
+  /* ===== 标签筛选 ===== */
+  var chips = document.querySelectorAll('#mrjFilterChips .mrj-chip');
+  var cards = document.querySelectorAll('#mrjVideoGrid .mrj-video-card');
+  var emptyTip = document.getElementById('mrjFilterEmpty');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('mrj-active'); });
+      chip.classList.add('mrj-active');
+      var f = chip.getAttribute('data-filter');
+      var visible = 0;
+      cards.forEach(function(card){
+        var tags = card.getAttribute('data-tags') || '';
+        var show = (f === 'all') || (tags.indexOf(f) > -1);
+        card.style.display = show ? '' : 'none';
+        if(show) visible++;
+      });
+      if(emptyTip){ emptyTip.style.display = visible ? 'none' : 'block'; }
+    });
+  });
+
+  /* ===== 弹窗通用 ===== */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m) m.classList.add('mrj-show');
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m) m.classList.remove('mrj-show');
+  }
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){ closeModal(btn.getAttribute('data-close')); });
+  });
+  document.querySelectorAll('.mrj-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask){ mask.classList.remove('mrj-show'); }
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.mrj-modal-mask.mrj-show').forEach(function(m){ m.classList.remove('mrj-show'); });
+    }
+  });
+
+  var openSubmit = document.getElementById('mrjOpenSubmit');
+  if(openSubmit) openSubmit.addEventListener('click', function(){ openModal('mrjSubmitModal'); });
+  var openSubmitHero = document.getElementById('mrjOpenSubmitHero');
+  if(openSubmitHero) openSubmitHero.addEventListener('click', function(){ openModal('mrjSubmitModal'); });
+  var openFeedback = document.getElementById('mrjOpenFeedback');
+  if(openFeedback) openFeedback.addEventListener('click', function(){ openModal('mrjFeedbackModal'); });
+
+  var submitForm = document.getElementById('mrjSubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal('mrjSubmitModal');
+      submitForm.reset();
+      showToast('投稿已提交，编辑团队会在三个工作日内联系你');
+    });
+  }
+  var feedbackForm = document.getElementById('mrjFeedbackForm');
+  if(feedbackForm){
+    feedbackForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal('mrjFeedbackModal');
+      feedbackForm.reset();
+      showToast('反馈已发送，感谢你的建议');
+    });
+  }
+
+  /* ===== 创作者档案 ===== */
+  var PROFILE_DATA = {
+    '孟若羽': {
+      desc: '孟若羽，品牌主理人之一，负责影像叙事与城市记录。习惯用长镜头和自然声场保留现场感，认为克制比表达更重要。近期正在推进《城市手记·冬》系列，已完成六集中的第三集拍摄。',
+      tags: ['城市记录','长镜头','环境音','专题企划']
+    },
+    '金寶娜': {
+      desc: '金寶娜，品牌主理人之一，负责手作、食物与细节场景的呈现。相信触感有记忆，把厨房与工作台都当作拍摄现场。近期上线《手作缓慢计划》第四期，并开放旧衣改造投稿。',
+      tags: ['手作','食物','过程记录','投稿共创']
+    },
+    '林晚舟': {
+      desc: '林晚舟，声音设计师，长期合作创作者。负责品牌多支片子的环境音采集与后期混音，主张“先听见，再看见”。参与制作《雨后的旧城区》等作品。',
+      tags: ['声音设计','环境音','后期混音']
+    },
+    '周未晞': {
+      desc: '周未晞，独立编导，长期合作创作者。擅长人物访谈与留白式剪辑，参与《院子里的六位邻居》《长谈》等作品，认为好的访谈是让被拍者忘记机器的存在。',
+      tags: ['人物访谈','编导','留白叙事']
+    }
+  };
+  function openProfile(name){
+    var d = PROFILE_DATA[name];
+    var title = document.getElementById('mrjProfileTitle');
+    var desc = document.getElementById('mrjProfileDesc');
+    var tags = document.getElementById('mrjProfileTags');
+    var follow = document.getElementById('mrjProfileFollow');
+    if(title) title.textContent = name + ' · 创作者档案';
+    if(desc) desc.textContent = d ? d.desc : '这里是创作者的基本介绍与近期动态。';
+    if(tags){
+      tags.innerHTML = '';
+      var list = d ? d.tags : [];
+      list.forEach(function(t){
+        var s = document.createElement('span');
+        s.className = 'mrj-chip';
+        s.textContent = t;
+        tags.appendChild(s);
+      });
+    }
+    if(follow){
+      follow.textContent = '关注这位创作者';
+      follow.classList.remove('mrj-faved');
+    }
+    openModal('mrjProfileModal');
+  }
+  document.querySelectorAll('.mrj-open-profile').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openProfile(btn.getAttribute('data-name'));
+    });
+  });
+  var followBtn = document.getElementById('mrjProfileFollow');
+  if(followBtn){
+    followBtn.addEventListener('click', function(){
+      var on = followBtn.classList.toggle('mrj-faved');
+      followBtn.textContent = on ? '已关注' : '关注这位创作者';
+      showToast(on ? '已关注，新作品发布时会提醒你' : '已取消关注');
+    });
+  }
+
+  /* ===== 回到顶部 ===== */
+  var topBtn = document.getElementById('mrjTop');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 500){ topBtn.classList.add('mrj-show'); }
+      else { topBtn.classList.remove('mrj-show'); }
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ===== 数字滚动 ===== */
+  var counters = document.querySelectorAll('.mrj-count');
+  function countUp(el){
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var start = null;
+    var dur = 1200;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          countUp(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.6});
+    counters.forEach(function(c){ io.observe(c); });
+  } else {
+    counters.forEach(function(c){
+      c.textContent = (c.getAttribute('data-target')||'0') + (c.getAttribute('data-suffix')||'');
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>
